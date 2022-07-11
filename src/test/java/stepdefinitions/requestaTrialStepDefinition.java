@@ -8,27 +8,24 @@ import org.openqa.selenium.support.ui.Select;
 import pages.AllPage;
 import utilities.Driver;
 import utilities.Log;
-import utilities.TestBaseRapor;
 
 public class requestaTrialStepDefinition extends TestBaseRapor {
     AllPage allPage=new AllPage();
 
     @And("User validates that he has entered the home page")
     public void userValidatesThatHeHasEnteredTheHomePage() {
-        extentTest=extentReports.createTest("raven pack","User validates that he has entered the home page");
-        Log.startTestCase("Raven Pack");
+       Log.startTestCase("Raven Pack");
         String actualTitle="Technology and insights for data-driven companies | RavenPack";
         String expectedTitle= Driver.getDriver().getTitle();
         Assert.assertEquals("main page unavailable",actualTitle,expectedTitle);
         Log.info("User validates that he has entered the home page");
-        extentTest.info("User validates that he has entered the home page");
+
     }
 
     @Then("User clicks to the request a Trial button")
     public void userClicksToTheRequestATrialButton() {
         allPage.homePage().requestaTrial.click();
         Log.info("User clicks to the request a Trial button");
-        extentTest.info("User clicks to the request a Trial button");
     }
 
     @Then("User enters name to full name box")
