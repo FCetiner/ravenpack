@@ -10,5 +10,5 @@ Feature: User should not login with invalid e-mail and password
     And User selects how he heard about Raven Pack
     And User cliks terms and conditions checkbox
     Then User cliks keep me updated checkbox
- #   Then User cliks submit button
-  #  Then User verifies succesful submit message
+   Then User cliks submit button
+    Then User verifies succesful submit message

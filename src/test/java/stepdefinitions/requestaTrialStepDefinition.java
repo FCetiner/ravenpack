@@ -9,7 +9,7 @@ import pages.AllPage;
 import utilities.Driver;
 import utilities.Log;
 
-public class requestaTrialStepDefinition extends TestBaseRapor {
+public class requestaTrialStepDefinition {
     AllPage allPage=new AllPage();
 
     @And("User validates that he has entered the home page")
